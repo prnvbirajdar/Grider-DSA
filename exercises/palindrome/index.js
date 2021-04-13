@@ -11,7 +11,7 @@ function palindrome(str) {
   if (str) {
     str.toString();
     const revStr = str.split("").reverse().join("");
-     return str === revStr
+    return str === revStr;
   }
 }
 
