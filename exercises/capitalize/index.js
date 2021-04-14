@@ -7,6 +7,32 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+function capitalize(str) {
+  // splits str in arrays as ['a','short','sentence']
+  let arr = str.split(" ");
+  // empty arr
+  let newArr = [];
+
+  for (const char of arr) {
+    //split every single string in the array further
+    // [ 'a' ]
+    // [ 's', 'h', 'o', 'r', 't' ]
+    // [ 's', 'e', 'n', 't', 'e', 'n', 'c', 'e' ]
+    let charArr = char.split("");
+    // first item is uppercase
+    charArr[0] = charArr[0].toUpperCase();
+    // join the string back up
+    // A
+    // Short
+    // Sentence
+    let jointArr = charArr.join("");
+
+    // every char is pushed in new empty array
+    newArr.push(jointArr);
+  }
+  // convert to string and adds space between each string element
+  // A Short Sentence
+  return newArr.join(" ");
+}
 
 module.exports = capitalize;
