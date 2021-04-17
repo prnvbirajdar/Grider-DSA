@@ -11,7 +11,11 @@
 //       '#  '
 //       '## '
 //       '###'
-
+//   steps(4)
+//       '#   '
+//       '##  '
+//       '### '
+//       '####'
 
 function steps(n) {
   for (let index = 0; index < array.length; index++) {
