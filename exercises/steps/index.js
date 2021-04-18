@@ -18,9 +18,33 @@
 //       '####'
 
 function steps(n) {
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+  // str adds blank space
+  let str = " ";
+  // str1 adds #
+  let str1 = "#";
+  // we push all of that to an empty array
+  let strN = [];
+
+  for (let i = 1; i <= n; i++) {
+    // str1.repeat(i) gives
+    // #
+    // ##
+    // ###
+    // ####
+    // #####
+
+    // str.repeat(n - i) gives empty spaces
+    // "    "
+    // "   "
+    // "  "
+    // " "
+    // ""
+
+    strN.push(str1.repeat(i) + str.repeat(n - i));
   }
+
+  // mapping and console logging gives us the required result
+  strN.map((el) => console.log(el));
 }
 
 module.exports = steps;
