@@ -9,10 +9,12 @@
 //   pyramid(2)
 //       ' # '
 //       '###'
-//   pyramid(3)
+//   pyramid(3) 3 rows, 3 columns
 //       '  #  '
 //       ' ### '
 //       '#####'
+
+
 
 function pyramid(n) {}
 
